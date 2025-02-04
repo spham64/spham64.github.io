@@ -32,10 +32,10 @@ a {
     flex-direction: column;
     font-size: 1.1em;
 }
-.container h2 {
+.page-name {
     margin-bottom: 10px;
 }
-.container h3 {
+.sp-name {
     margin-top: 0;
     margin-bottom: 0;
 }
