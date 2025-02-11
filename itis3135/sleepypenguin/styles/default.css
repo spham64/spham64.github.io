@@ -145,3 +145,21 @@ input[type="email"] {
     padding: 10px;  
     border: 2px solid #ccc;
 }
+.product {
+    width: 70vw;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    font-size: 1.1em;
+    color: rgb(82, 82, 82);
+    font-family: "Inter", serif; 
+}
+.product h2 {
+    margin-bottom: 50px;
+    color: black;
+    font-weight: 500;
+    font-size: 2em;
+}
+.product p {
+    line-height: 1.8;
+}
