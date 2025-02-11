@@ -23,18 +23,11 @@ header {
     border-bottom: 1px solid rgba(104, 104, 104, 0.178);
     padding: 10px 0; 
 }
-header h1 {
+h1 {
     margin: 0; 
     font-size: 2.5em;
     font-family: "Afacad Flux", serif;
     font-weight: 350;
-}
-header h2 {
-    margin-top: 0;  
-    margin-bottom: 15px;  
-    font-size: 1.4em;
-    font-family: "Afacad Flux", serif;
-    font-weight: 400;
 }
 nav {
     position: absolute;
@@ -92,7 +85,7 @@ footer p {
     flex: 1;
     text-align: left;
 }
-footer h2 {
+.wwl {
     margin: 0;
     flex: 1;
     text-align: right; 
@@ -115,12 +108,6 @@ footer a:hover {
     font-size: 1.1em;
     color: rgb(82, 82, 82);
     font-family: "Inter", serif; 
-}
-.about h2 {
-    margin-bottom: 50px;
-    color: black;
-    font-weight: 500;
-    font-size: 2em;
 }
 .about p {
     line-height: 1.8;
@@ -154,12 +141,12 @@ input[type="email"] {
     color: rgb(82, 82, 82);
     font-family: "Inter", serif; 
 }
-.product h2 {
+.product p {
+    line-height: 1.8;
+}
+h2 {
     margin-bottom: 50px;
     color: black;
     font-weight: 500;
     font-size: 2em;
-}
-.product p {
-    line-height: 1.8;
 }
