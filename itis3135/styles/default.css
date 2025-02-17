@@ -57,6 +57,11 @@ footer a:hover {
 figure img {
     height: 450px;
 }
+figcaption {
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+}
 .list-container {
     width: 50vw;
 }

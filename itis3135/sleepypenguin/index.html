@@ -1,6 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-REZYKYCMBZ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){
+        dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-REZYKYCMBZ');
+    </script> 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sleepy Penguin 🐧 Home</title>
@@ -10,17 +21,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 </head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-REZYKYCMBZ"></script>
-<script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){
-    dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
 
-    gtag('config', 'G-REZYKYCMBZ');
-</script>
 <body>
     <header>
         <h1>Sleepy Penguin Archives</h1>
@@ -32,13 +33,13 @@
         </nav>
     </header>
     <main>
-        <section class="welcome-container">
+        <div class="welcome-container">
             <a href="products.html" class="welcome-textbox">
                 <p>SHOP SLEEPY PENGUIN ARCHIVES</p>
             </a>
             <p>Reviving the past</p>
-        </section>
-        <section class="mailing-list">
+        </div>
+        <div class="mailing-list">
             <p>JOIN THE MAILING LIST</p>
             <form method="POST">
                 <label for="email"></label>
@@ -46,7 +47,7 @@
 
                 <button type="submit">→</button>
             </form>
-        </section>
+        </div>
     </main>
     <footer>
         <p>Page Designed By <a href="../phamcreative.com/" target="_blank">Pham Creative </a>&copy; 2025</p>
