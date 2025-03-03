@@ -1,153 +1,185 @@
-body{
-    font-family: "Inter", serif;   
-    font-optical-sizing: auto;   
-    display: flex;
-    margin: 0;
-    padding: 0;
-    min-height: 100vh;
-    flex-direction: column;
-    font-weight: 350;
+body {
+  font-family: "Inter", serif;
+  font-optical-sizing: auto;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  flex-direction: column;
+  font-weight: 350;
 }
 main {
-    flex: 1;
-    padding: 0;
-    margin: 0;
+  flex: 1;
+  padding: 0;
+  margin: 0;
 }
 header {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 60px;
-    padding: 0;
-    position: relative; 
-    border-bottom: 1px solid rgba(104, 104, 104, 0.178);
-    padding: 10px 0; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 60px;
+  padding: 0;
+  position: relative;
+  border-bottom: 1px solid rgba(104, 104, 104, 0.178);
+  padding: 10px 0;
 }
 h1 {
-    margin: 0; 
-    font-size: 2.5em;
-    font-family: "Afacad Flux", serif;
-    font-weight: 350;
+  margin: 0;
+  font-size: 2.5em;
+  font-family: "Afacad Flux", serif;
+  font-weight: 350;
 }
 nav {
-    position: absolute;
-    left: 50px;
-    top: 50%;
-    transform: translateY(-50%); 
-    display: flex;
-    gap: 20px;
-    margin: 0;
-    padding: 0;
+  position: absolute;
+  left: 50px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
 }
 nav a {
-    text-decoration: none;
-    color: rgb(82, 82, 82);
-    font-weight: 400;
-    font-size: .9em
+  text-decoration: none;
+  color: rgb(82, 82, 82);
+  font-weight: 400;
+  font-size: 0.9em;
 }
 nav a:hover {
-    color: black;
+  color: black;
 }
 .welcome-container {
-    background-image: url("../images/old_charlotte.jpg");
-    background-size: cover;
-    display: flex;
-    height: 60vh;
-    margin-top: -2px;
-    padding: 0;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    color: white;
-    font-size: 1em;
+  background-image: url("../images/old_charlotte.jpg");
+  background-size: cover;
+  display: flex;
+  height: 60vh;
+  margin-top: -2px;
+  padding: 0;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  font-size: 1em;
 }
 .welcome-textbox {
-    background-color: rgb(81, 81, 81);
-    color: white;
-    padding: 0 25px;
-    min-height: 5px;
-    display: flex;
-    align-items: center;
-    text-decoration: none;
+  background-color: rgb(81, 81, 81);
+  color: white;
+  padding: 0 25px;
+  min-height: 5px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
 }
 footer {
-    margin-top: auto;
-    color: rgb(82, 82, 82);
-    border-top: 1px solid rgba(104, 104, 104, 0.178);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 20px;
-    position: relative;
+  margin-top: auto;
+  color: rgb(82, 82, 82);
+  border-top: 1px solid rgba(104, 104, 104, 0.178);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  position: relative;
 }
 footer p {
-    margin: 0;
-    flex: 1;
-    text-align: left;
+  margin: 0;
+  flex: 1;
+  text-align: left;
 }
 .wwl {
-    margin: 0;
-    flex: 1;
-    text-align: right; 
-    font-size: 1.2em;
-    font-weight: 400;
+  margin: 0;
+  flex: 1;
+  text-align: right;
+  font-size: 1.2em;
+  font-weight: 400;
 }
 footer a {
-    text-decoration: none;
-    color: rgb(82, 82, 82);
+  text-decoration: none;
+  color: rgb(82, 82, 82);
 }
 footer a:hover {
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: black;
 }
 .about {
-    width: 50vw;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    font-size: 1.1em;
-    color: rgb(82, 82, 82);
-    font-family: "Inter", serif; 
+  width: 50vw;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  font-size: 1.1em;
+  color: rgb(82, 82, 82);
+  font-family: "Inter", serif;
 }
 .about p {
-    line-height: 1.8;
+  line-height: 1.8;
 }
 .mailing-list {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    font-family: "Inter", serif;
-    text-align: center;
-    margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: "Inter", serif;
+  text-align: center;
+  margin-top: 20px;
 }
 .mailing-list form {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 input[type="email"] {
-    width: 300px; 
-    height: 30px; 
-    font-size: 1em;  
-    padding: 20px;  
-    border: 2px solid #ccc;
-    box-sizing: border-box;
+  width: 300px;
+  height: 30px;
+  font-size: 1em;
+  padding: 20px;
+  border: 2px solid #ccc;
+  box-sizing: border-box;
 }
 .product {
-    width: 70vw;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    font-size: 1.1em;
-    color: rgb(82, 82, 82);
-    font-family: "Inter", serif; 
+  width: 70vw;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  font-size: 1.1em;
+  color: rgb(82, 82, 82);
+  font-family: "Inter", serif;
 }
 .product p {
-    line-height: 1.8;
+  line-height: 1.8;
 }
 h2 {
-    margin-bottom: 50px;
-    color: black;
-    font-weight: 500;
-    font-size: 2em;
+  margin-bottom: 50px;
+  color: black;
+  font-weight: 500;
+  font-size: 2em;
+}
+/* For Phones */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+    padding: 15px 0;
+  }
+  nav {
+    position: static;
+    transform: none;
+    margin-top: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+}
+/* For Tablets */
+@media (max-width: 1024px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+    padding: 15px 0;
+  }
+  nav {
+    position: static;
+    transform: none;
+    margin-top: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
 }
