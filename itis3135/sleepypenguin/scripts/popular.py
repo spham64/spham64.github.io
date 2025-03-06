@@ -36,3 +36,5 @@ for row in response.rows:
 
 with open("data/popular.json", "w") as f:
     f.write(json.dumps(pages_dict, indent=4))
+
+print("Data has been written to popular.json")

@@ -47,4 +47,4 @@ for row in response.rows:
 with open("data/geographic.json", "w") as f:
     f.write(json.dumps(geographic_location, indent=4))
 
-print("Data has been written to a JSON file")
+print("Data has been written to geographic.json")
