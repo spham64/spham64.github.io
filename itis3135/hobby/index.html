@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gunpla Hobby Page</title>
+    <script
+      src="https://lint.page/kit/4d0fe3.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      body {
+        font-family: Georgia, "Times New Roman", Times, serif;
+        background-color: #2c365e;
+        color: white;
+        font-size: 1.1em;
+        margin: 0 auto;
+        line-height: 1.5;
+      }
+      main {
+        margin: 0 auto;
+        min-height: 77vh;
+      }
+      header {
+        margin: 0 auto;
+        text-align: center;
+        padding-bottom: 20px;
+      }
+      header nav a {
+        text-decoration: none;
+        color: white;
+      }
+      header nav a:hover {
+        text-decoration: underline;
+      }
+      h1 {
+        font-size: 2em;
+      }
+      footer {
+        text-align: center;
+      }
+      footer a {
+        color: white;
+        text-decoration: none;
+      }
+      footer a:hover {
+        text-decoration: underline;
+      }
+      figcaption a {
+        color: white;
+        text-decoration: none;
+      }
+      figcaption a:hover {
+        text-decoration: underline;
+      }
+      figure {
+        text-align: center;
+      }
+      h2 {
+        text-align: center;
+      }
+      h3 {
+        text-align: center;
+      }
+      section {
+        background-color: #484d6d;
+        max-width: 60vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        border-radius: 10px;
+        padding: 10px;
+      }
+      section p {
+        text-align: center;
+        padding-left: 30px;
+        padding-right: 30px;
+      }
+      section img {
+        border-radius: 10px;
+      }
+      iframe {
+        display: flex;
+        align-items: center;
+        margin: 0 auto;
+      }
+      fieldset {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+      button {
+        background-color: #2b193d;
+        color: white;
+        height: 30px;
+        border: none;
+        font-size: 1em;
+        border-radius: 5px;
+      }
+      button:hover {
+        background-color: #3c2453;
+      }
+      ol {
+        display: table;
+        margin: 0 auto;
+        list-style-position: outside;
+        text-align: left;
+        padding-left: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Gunpla</h1>
+      <nav>
+        <a href="javascript:void(0)" onclick="showSection('what')">What</a> ⚡
+        <a href="javascript:void(0)" onclick="showSection('who')">Who</a> ⚡
+        <a href="javascript:void(0)" onclick="showSection('when')">When</a> ⚡
+        <a href="javascript:void(0)" onclick="showSection('where')">Where</a> ⚡
+        <a href="javascript:void(0)" onclick="showSection('why')">Why</a> ⚡
+        <a href="javascript:void(0)" onclick="showSection('how')">How</a> ⚡
+        <a href="javascript:void(0)" onclick="showSection('ai-prompts')"
+          >AI Prompts</a
+        >
+      </nav>
+    </header>
+    <main>
+      <section id="who">
+        <h2>Who</h2>
+        <figure>
+          <img src="images/myself_reduced.jpg" />
+          <figcaption><em>Picture of me, a Gunpla builder</em></figcaption>
+        </figure>
+        <p>
+          I have been building Gundam plastic model kits since December, 2018.
+          After seeing my cousin's collection, I was super interested in how
+          they were built. That Christmas, I was gifted my first Gunpla kit and
+          have built them ever since. My interest for this hobby spiked when I
+          started watching the various animated series'. Although an expensive
+          hobby, it allows me to unwind.
+        </p>
+        <h3>Get In Touch!</h3>
+        <form>
+          <fieldset>
+            <legend>Info</legend>
+            <label for="first-name">Enter Your First Name:</label>
+            <input id="first-name" name="first-name" type="text" required />
+            <label for="last-name">Enter Your Last Name:</label>
+            <input id="last-name" name="last-name" type="text" required />
+            <label for="email">Enter Your Email:</label>
+            <input id="email" name="email" type="email" required />
+            <button type="submit">Submit</button>
+          </fieldset>
+        </form>
+      </section>
+      <section id="what">
+        <h2>What</h2>
+        <figure>
+          <img src="images/whatimage.jpg" />
+          <figcaption>
+            <em
+              >Fully assembled Gunpla kit - Photo by
+              <a href="https://unsplash.com/@foxuno" target="_blank">Foxunno</a>
+              on
+              <a
+                href="https://unsplash.com/photos/a-table-topped-with-lots-of-crafting-supplies-t7g4GY-y6tI"
+                target="_blank"
+                >Unsplash</a
+              ></em
+            >
+          </figcaption>
+        </figure>
+        <p>
+          <strong>Gunpla</strong> (Gundam plastic model) are plastic model kits
+          based on the popular anime franchise, Mobile Suit Gundam. Gunpla
+          models depict a variety of mecha from the Gundam multiverse. The model
+          kits come in various grades which determine the size, complexity, and
+          articulation of the models. Gunpla is a great hobby for those who
+          enjoy building and customizing models. It encourages creativity as
+          many builders often paint and modify their kits to their liking.
+        </p>
+        <h3>Recommended Tools</h3>
+        <ul>
+          <li>Nippers (Side Cutters)</li>
+          <li>Hobby Knife (X-Acto or Precision Cutter)</li>
+          <li>Tweezers</li>
+          <li>Sanding Sticks/Sponge Files</li>
+          <li>Panel Lining Pens/Washes</li>
+        </ul>
+      </section>
+      <section id="when">
+        <h2>When</h2>
+        <figure>
+          <img src="images/whenimage.jpg" />
+          <figcaption>
+            <em
+              >Gunpla kit being built - Photo by
+              <a href="https://unsplash.com/@louisdraymond" target="_blank"
+                >Louis Thai</a
+              >
+              on
+              <a
+                href="https://unsplash.com/photos/a-person-is-working-on-a-toy-airplane-VOmXHDBDQYo"
+                target="_blank"
+                >Unsplash</a
+              ></em
+            >
+          </figcaption>
+        </figure>
+        <p>
+          Gunpla kits can be built at any time of the day. The time required to
+          complete a kit depends on its grade, complexity, and level of detail
+          thus many builders choose to build it over multiple days, weeks, or
+          even months! Many builders will choose build during the evening or on
+          weekends as they can fully relax. However, Gunpla is about enjoyment
+          so the best time to build is whenever you want to!
+        </p>
+        <h3>When do you think is the best time to build Gunpla?</h3>
+        <form>
+          <fieldset>
+            <legend>Select your preferred time for building</legend>
+            <label>
+              <input type="radio" name="build_time" value="morning" />
+              Morning </label
+            ><br />
+            <label>
+              <input type="radio" name="build_time" value="afternoon" />
+              Afternoon </label
+            ><br />
+            <label>
+              <input type="radio" name="build_time" value="night" />
+              Night </label
+            ><br />
+            <button type="submit">Submit</button>
+          </fieldset>
+        </form>
+      </section>
+      <section id="where">
+        <h2>Where</h2>
+        <figure>
+          <img src="images/whereimage.jpg" />
+          <figcaption>
+            <em
+              >Gundam statue at Odaiba, Tokyo - Photo by
+              <a href="https://unsplash.com/@sebbykurps" target="_blank"
+                >Sebastian Kurpiel</a
+              >
+              on
+              <a
+                href="https://unsplash.com/photos/white-gundam-statue-in-front-of-building-WMFWo41uPP4"
+                target="_blank"
+                >Unsplash</a
+              ></em
+            >
+          </figcaption>
+        </figure>
+        <p>
+          Gunpla can be enjoyed everywhere! The place you build Gunpla depends
+          on your comfort. Typically, builders choose to build in their own
+          homes at a desk. Some Gunpla enthusiasts even have a workshop that is
+          designated for their models. Additionally, there are hobby shops that
+          have spots to build and customize Gunpla.
+        </p>
+        <h3>Hobby Shops</h3>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d185696.1425250967!2d-80.96260951961594!3d35.28544606969789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sgunpla!5e0!3m2!1sen!2sus!4v1741908486283!5m2!1sen!2sus"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </section>
+      <section id="why">
+        <h2>Why</h2>
+        <figure>
+          <img src="images/whyimage.jpg" />
+          <figcaption>
+            <em
+              >Gunpla collection - Photo by
+              <a href="https://unsplash.com/@pkw05" target="_blank"
+                >Daily Choice</a
+              >
+              on
+              <a
+                href="https://unsplash.com/photos/assorted-gundam-toy-collection-lot-atVCKBxKiqQ"
+                target="_blank"
+                >Unsplash</a
+              ></em
+            >
+          </figcaption>
+        </figure>
+        <p>
+          Building Gunpla is a creative and relaxing hobby that enhances
+          patience, hand-eye coordination, and problem-solving skills. It offers
+          a sense of accomplishment, allows for customization, and connects
+          enthusiasts through a vibrant community. Whether for artistic
+          expression or enjoyment, it’s a fulfilling and rewarding experience.
+        </p>
+        <h3>Another Opinion</h3>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/GrBOa6_E7xM"
+          title="Why build Gunpla? A therapist&#39;s thoughts on Building Model Kits"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+      </section>
+      <section id="how">
+        <h2>How</h2>
+        <figure>
+          <img src="images/howimage.jpg" />
+          <figcaption>
+            <em
+              >Gunpla kit instructions - Photo by
+              <a href="https://unsplash.com/@thejonco" target="_blank"
+                >Jonathan Ikemura</a
+              >
+              on
+              <a
+                href="https://unsplash.com/photos/a-close-up-of-a-toy-airplane-on-a-table-gOeEr6YWQ1c"
+                target="_blank"
+                >Unsplash</a
+              ></em
+            >
+          </figcaption>
+        </figure>
+        <h3>Step-by-step Instructions</h3>
+        <ol>
+          <li>
+            <strong>Unbox & Organize</strong> – Open the kit, check the
+            instruction manual, and sort the plastic runners.
+          </li>
+          <li>
+            <strong>Cut Out Parts</strong> – Use nippers to carefully remove
+            pieces from the sprue (plastic frame).
+          </li>
+          <li>
+            <strong>Clean Up</strong> – Trim excess plastic (nub marks) with a
+            hobby knife or sanding sticks.
+          </li>
+          <li>
+            <strong>Assemble the Model</strong> – Follow the manual, snapping
+            pieces together (no glue needed).
+          </li>
+          <li>
+            <strong>Panel Lining & Detailing (Optional)</strong> – Use panel
+            lining pens or washes to enhance details.
+          </li>
+          <li>
+            <strong>Apply Stickers/Decals (Optional)</strong> – Add markings for
+            a more realistic look.
+          </li>
+          <li>
+            <strong>Top Coat & Customization (Optional)</strong> – Spray a
+            matte, gloss, or semi-gloss coat for protection and finish.
+          </li>
+          <li>
+            <strong>Final Touches & Display</strong> – Pose the model and place
+            it in a stand or diorama.
+          </li>
+        </ol>
+        <h3>Beginner Tutorial</h3>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/Idm7mt98enM"
+          title="The Ultimate Gunpla Beginner&#39;s Guide"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+      </section>
+      <section id="ai-prompts">
+        <h2>AI Prompts</h2>
+        <figure>
+          <img src="images/chatgpt-logo.png" />
+          <figcaption>
+            <em
+              >ChatGPT logo - Photo by
+              <a
+                href="https://commons.wikimedia.org/wiki/File:ChatGPT-Logo.png"
+                target="_blank"
+                >Johnlearningwiki</a
+              >
+              on
+              <a
+                href="https://commons.wikimedia.org/wiki/File:ChatGPT-Logo.png"
+                target="_blank"
+                >Wikimedia Commons</a
+              ></em
+            >
+          </figcaption>
+        </figure>
+        <h3>Prompts</h3>
+        <ul>
+          <li>Gunpla recomended tools</li>
+          <li>Why should smoeone build gunpla?</li>
+          <li>Create a radio form for morning, afternoon, and night</li>
+          <li>Describe the basic process of how to build Gunpla kits</li>
+          <li>
+            Given this code generate javascript that uses the nav bar to show
+            certain sections it should hide all sections initially except the
+            "what" section
+          </li>
+          <li>Center ol with numbers lined up</li>
+        </ul>
+      </section>
+    </main>
+    <footer>
+      <p>
+        Page Designed By
+        <a href="../phamcreative.com/" target="_blank">Pham Creative </a>&copy;
+        2025,
+        <em
+          >Certified in
+          <a
+            href="https://www.freecodecamp.org/certification/spham64/responsive-web-design"
+            target="_blank"
+            >Responsive Web Design</a
+          ></em
+        >
+      </p>
+    </footer>
+    <script>
+      // Function to show a specific section and hide others
+      function showSection(sectionId) {
+        // Get all sections inside <main>
+        const sections = document.querySelectorAll("main section");
+
+        // Loop through all sections and hide them
+        sections.forEach((section) => {
+          section.style.display = "none";
+        });
+
+        // Show the selected section
+        const selectedSection = document.getElementById(sectionId);
+        if (selectedSection) {
+          selectedSection.style.display = "block";
+        }
+      }
+
+      // Hide all sections initially except "what"
+      document.addEventListener("DOMContentLoaded", () => {
+        showSection("what");
+      });
+    </script>
+  </body>
+</html>
