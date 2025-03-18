@@ -13,12 +13,8 @@ from google.analytics.data_v1beta.types import (
 
 
 """Runs a simple report on a Google Analytics 4 property."""
-# TODO(developer): Uncomment this variable and replace with your
-#  Google Analytics 4 property ID before running the sample.
 property_id = "477770378"
 
-# Using a default constructor instructs the client to use the credentials
-# specified in GOOGLE_APPLICATION_CREDENTIALS environment variable.
 client = BetaAnalyticsDataClient()
 
 request = RunReportRequest(
@@ -44,7 +40,7 @@ for row in response.rows:
 
     geographic_location[key] = row.metric_values[0].value
 
-with open("data/geographic.json", "w") as f:
+with open("../data/geographic.json", "w") as f:
     f.write(json.dumps(geographic_location, indent=4))
 
 print("Data has been written to geographic.json")

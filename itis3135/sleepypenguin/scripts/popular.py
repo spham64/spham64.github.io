@@ -34,7 +34,7 @@ pages_dict = {}
 for row in response.rows:
     pages_dict[row.dimension_values[0].value] = row.metric_values[0].value
 
-with open("data/popular.json", "w") as f:
+with open("../data/popular.json", "w") as f:
     f.write(json.dumps(pages_dict, indent=4))
 
 print("Data has been written to popular.json")
