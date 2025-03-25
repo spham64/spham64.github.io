@@ -15,7 +15,7 @@ from google.analytics.data_v1beta.types import (
 """Runs a simple report on a Google Analytics 4 property."""
 # TODO(developer): Uncomment this variable and replace with your
 #  Google Analytics 4 property ID before running the sample.
-property_id = "471672910"
+property_id = "387576805"
 
 # Using a default constructor instructs the client to use the credentials
 # specified in GOOGLE_APPLICATION_CREDENTIALS environment variable.
