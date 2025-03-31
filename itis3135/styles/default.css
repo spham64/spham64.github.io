@@ -158,3 +158,29 @@ td {
 .complex-table .total-row th {
   text-align: right;
 }
+.form-container {
+  font-size: 1.1em;
+}
+.form-container input {
+  font-size: 0.8em;
+}
+.form-container fieldset {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.form-container label {
+  margin-bottom: 4px;
+  margin-top: 4px;
+}
+.form-container button {
+  margin-bottom: 4px;
+  margin-top: 4px;
+}
+button {
+  background-color: rgb(98, 91, 165);
+  color: white;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 0.8em;
+}
