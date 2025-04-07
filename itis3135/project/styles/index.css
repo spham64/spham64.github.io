@@ -1,0 +1,115 @@
+body {
+  background-color: #b0c9bd;
+  font-size: 1.2em;
+}
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 0;
+}
+header nav {
+  background-color: #478396;
+  width: 40vw;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-radius: 5px;
+}
+header nav a {
+  text-decoration: none;
+  color: #eeedeb;
+  width: 100%;
+  text-align: center;
+}
+header nav a:hover {
+  color: #bdbbb8;
+}
+header img {
+  margin-bottom: 20px;
+}
+h1 {
+  color: #ffeac5;
+  text-align: center;
+}
+/* container of main content */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 50vw;
+  margin: 0 auto;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #478396;
+  color: #eeedeb;
+  text-align: center;
+}
+.container img {
+  border-radius: 5px;
+}
+/* Google Calendar */
+iframe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+form {
+  margin: 0 auto;
+  background-color: #404d57;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  color: #eeedeb;
+  width: calc(100% - 60px); /* account for 30px left + 30px right padding */
+  max-width: calc(600px - 60px);
+}
+.form-group {
+  margin-bottom: 20px;
+  text-align: left;
+  width: 100%;
+}
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+input,
+textarea {
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  background-color: #eeedeb;
+  color: #333;
+}
+input::placeholder,
+textarea::placeholder {
+  color: #777;
+}
+button {
+  background-color: #478396;
+  color: #eeedeb;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+button:hover {
+  background-color: #365f69;
+}

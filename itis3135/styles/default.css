@@ -16,7 +16,7 @@ header {
   display: flex;
   background-color: rgb(98, 91, 165);
   color: white;
-  height: 175px;
+  height: 200px;
   align-items: center;
   justify-content: center;
   flex-direction: column;
