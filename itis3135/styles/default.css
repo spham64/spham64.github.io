@@ -287,3 +287,7 @@ h4 {
   display: block;
   margin: 0 auto;
 }
+.container figcaption a {
+  color: rgb(98, 91, 165);
+  margin-top: 10px;
+}
