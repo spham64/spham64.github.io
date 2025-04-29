@@ -291,3 +291,8 @@ h4 {
   color: rgb(98, 91, 165);
   margin-top: 10px;
 }
+.container a {
+  color: rgb(98, 91, 165);
+  margin-bottom: 20px;
+  font-size: 1.2em;
+}
