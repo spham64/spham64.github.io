@@ -35,6 +35,9 @@ h2 {
   color: #ffeac5;
   text-align: center;
 }
+h3 {
+  margin: 10px auto;
+}
 /* container of main content */
 .container {
   display: flex;
@@ -124,10 +127,12 @@ footer p {
   margin: 0;
   font-size: 1.4rem;
   color: rgb(77, 73, 73);
-  max-width: 390px;
+  width: 390px;
   background-color: #ffeac5;
   border-radius: 8px;
   border: solid 1px #887b65;
+  margin-top: 10px;
+  box-sizing: border-box;
 }
 .dropdown p {
   line-height: 30px;
@@ -198,4 +203,7 @@ footer p {
 .slideshow-container .prev,
 .slideshow-container .next {
   cursor: pointer;
+}
+#form-message {
+  margin-top: 20px;
 }
