@@ -1,35 +1,32 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useState } from "react";
+import reactLogo from "./assets/react.svg";
+import viteLogo from "/vite.svg";
+import "./App.css";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
 
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
+      <h1>Samuel Pham</h1>
+      <div class="card">
         <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
+          I am a student at UNCC from Charlotte, NC, with a passion for solving
+          challenging problems using cutting-edge technologies and tools. This
+          passion has led me into the software development field, where I have
+          researched and worked on ways to support literacy and education for
+          all.
+        </p>
+        <p>
+          When I'm not coding or studying, I enjoy activites that keep my
+          physically and mentally active. Whether it's going to the gym,
+          reading, or staying up-to-date with the latest trends in technology
+          and economics, I’m always looking for ways to stay engaged and
+          continue learning.
         </p>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
