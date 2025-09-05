@@ -138,7 +138,7 @@ export default function Projects() {
                 <CardMedia
                   component="img"
                   height="140"
-                  image=""
+                  image="/images/nuclear.png"
                   alt="image of nuclear energy data visualization"
                 />
                 <CardContent>

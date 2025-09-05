@@ -17,6 +17,25 @@ export default function Nuclear() {
         }}
       >
         <Header />
+        <Box
+          sx={{
+            flex: 1,
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            p: 2,
+          }}
+        >
+          <iframe
+            src="/jupyter/nuclear.html"
+            title="Nuclear Energy Notebook"
+            style={{
+              width: "100%",
+              height: "80vh",
+              borderRadius: "8px",
+            }}
+          />
+        </Box>
         <Footer />
       </Box>
     </>
