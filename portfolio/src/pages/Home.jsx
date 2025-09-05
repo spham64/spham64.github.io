@@ -30,6 +30,7 @@ export default function Home() {
           // border: 1,
           boxSizing: "border-box",
           backgroundColor: "#242423",
+          width: "100vw",
         }}
       >
         <Header />
@@ -41,7 +42,7 @@ export default function Home() {
             justifyContent: "center",
             // border: 1,
             mx: { xs: 2, sm: 10, md: 20, lg: 50, xl: 75 },
-            mt: { xs: 5, sm: 15 },
+            mt: { xs: 3, sm: 7 },
             maxWidth: "100%",
             mb: 5,
           }}
