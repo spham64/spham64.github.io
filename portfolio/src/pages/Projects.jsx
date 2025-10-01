@@ -17,7 +17,6 @@ export default function Projects() {
           display: "flex",
           flexDirection: "column",
           minHeight: "100vh",
-          // border: 1,
           boxSizing: "border-box",
           backgroundColor: "#242423",
           width: "100vw",
@@ -30,7 +29,6 @@ export default function Projects() {
             flexDirection: "column",
             justifyContent: "center",
             alignItems: "center",
-            // border: 1,
             mx: { xs: 2, sm: 10, md: 20, lg: 50, xl: 75 },
             mt: { xs: 2, sm: 5 },
             maxWidth: "100%",
@@ -46,7 +44,6 @@ export default function Projects() {
             display: "flex",
             flexDirection: "row",
             justifyContent: "center",
-            // border: 1,
             mx: { xs: 2, sm: 10, md: 20, lg: 50, xl: 75 },
             mt: 2,
             maxWidth: "100%",
@@ -54,16 +51,17 @@ export default function Projects() {
             gap: 2,
           }}
         >
-          <Card
-            sx={{
-              width: 350,
-              backgroundColor: "#353533ff",
-              borderRadius: 4,
-            }}
+          <Link
+            to="https://github.com/Group10-3155/group_10_3155"
+            target="_blank"
           >
-            <a
-              href="https://github.com/Group10-3155/group_10_3155"
-              target="_blank"
+            <Card
+              sx={{
+                width: 350,
+                height: 275,
+                backgroundColor: "#353533ff",
+                borderRadius: 4,
+              }}
             >
               <CardActionArea>
                 <CardMedia
@@ -83,17 +81,18 @@ export default function Projects() {
                   </Typography>
                 </CardContent>
               </CardActionArea>
-            </a>
-          </Card>
+            </Card>
+          </Link>
 
-          <Card
-            sx={{
-              width: 350,
-              backgroundColor: "#353533ff",
-              borderRadius: 4,
-            }}
-          >
-            <a href="https://github.com/ryanhilliard23/ADaVS" target="_blank">
+          <Link to="https://github.com/ryanhilliard23/ADaVS" target="_blank">
+            <Card
+              sx={{
+                width: 350,
+                height: 275,
+                backgroundColor: "#353533ff",
+                borderRadius: 4,
+              }}
+            >
               <CardActionArea sx={{ height: "100%" }}>
                 <CardMedia
                   component="img"
@@ -111,15 +110,14 @@ export default function Projects() {
                   </Typography>
                 </CardContent>
               </CardActionArea>
-            </a>
-          </Card>
+            </Card>
+          </Link>
         </Box>
         <Box
           sx={{
             display: "flex",
             flexDirection: "row",
             justifyContent: "center",
-            // border: 1,
             mx: { xs: 2, sm: 10, md: 20, lg: 50, xl: 75 },
             maxWidth: "100%",
             mb: 5,
@@ -130,6 +128,7 @@ export default function Projects() {
             <Card
               sx={{
                 width: 350,
+                height: 275,
                 backgroundColor: "#353533ff",
                 borderRadius: 4,
               }}
@@ -147,7 +146,36 @@ export default function Projects() {
                   </Typography>
                   <Typography variant="body2" sx={{ color: "white" }}>
                     A jupyter notebook that compares nuclear energy with other
-                    energy sources in the United States.
+                    energy sources in the United States
+                  </Typography>
+                </CardContent>
+              </CardActionArea>
+            </Card>
+          </Link>
+          <Link to="/projects/classification">
+            <Card
+              sx={{
+                width: 350,
+                height: 275,
+                backgroundColor: "#353533ff",
+                borderRadius: 4,
+              }}
+            >
+              <CardActionArea>
+                <CardMedia
+                  component="img"
+                  height="140"
+                  image="/images/income_group.png"
+                  alt="image of global income classification visualization"
+                />
+                <CardContent>
+                  <Typography gutterBottom variant="h5" sx={{ color: "white" }}>
+                    Global Income Classification
+                  </Typography>
+                  <Typography variant="body2" sx={{ color: "white" }}>
+                    A jupyter notebook that predicts country income groups using
+                    non-GDP development indicators with a high-performing Random
+                    Forest model
                   </Typography>
                 </CardContent>
               </CardActionArea>
