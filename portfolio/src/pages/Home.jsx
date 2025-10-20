@@ -81,7 +81,7 @@ export default function Home() {
             </Link>{" "}
             and{" "}
             <Link
-              to="https://drive.google.com/file/d/1QjLq6dqdqMIGsse6bVXWMqiTEbjr_33a/view?usp=sharing"
+              to="https://drive.google.com/file/d/18ui1_42pOzMsrTZfjkb5FBEcrnYd43qw/view?usp=sharing"
               target="_blank"
               style={{ color: "#E16036" }}
             >

@@ -19,7 +19,8 @@ export default function Projects() {
           minHeight: "100vh",
           boxSizing: "border-box",
           backgroundColor: "#242423",
-          width: "100vw",
+          width: "99vw",
+          // border: 1,
         }}
       >
         <Header />
@@ -120,7 +121,7 @@ export default function Projects() {
             justifyContent: "center",
             mx: { xs: 2, sm: 10, md: 20, lg: 50, xl: 75 },
             maxWidth: "100%",
-            mb: 5,
+            mb: 3,
             gap: 2,
           }}
         >
@@ -176,6 +177,73 @@ export default function Projects() {
                     A jupyter notebook that predicts country income groups using
                     non-GDP development indicators with a high-performing Random
                     Forest model
+                  </Typography>
+                </CardContent>
+              </CardActionArea>
+            </Card>
+          </Link>
+        </Box>
+        <Box
+          sx={{
+            display: "flex",
+            flexDirection: "row",
+            justifyContent: "center",
+            mx: { xs: 2, sm: 10, md: 20, lg: 50, xl: 75 },
+            maxWidth: "100%",
+            mb: 3,
+            gap: 2,
+          }}
+        >
+          <Link to="/projects/nuclear">
+            <Card
+              sx={{
+                width: 350,
+                height: 275,
+                backgroundColor: "#353533ff",
+                borderRadius: 4,
+              }}
+            >
+              <CardActionArea>
+                <CardMedia
+                  component="img"
+                  height="140"
+                  image="/images/nuclear.png"
+                  alt="image of nuclear energy data visualization"
+                />
+                <CardContent>
+                  <Typography gutterBottom variant="h5" sx={{ color: "white" }}>
+                    Gold Regression
+                  </Typography>
+                  <Typography variant="body2" sx={{ color: "white" }}>
+                    A jupyter notebook that uses regression models to predict
+                    gold prices based on various financial factors
+                  </Typography>
+                </CardContent>
+              </CardActionArea>
+            </Card>
+          </Link>
+          <Link to="/projects/classification">
+            <Card
+              sx={{
+                width: 350,
+                height: 275,
+                backgroundColor: "#353533ff",
+                borderRadius: 4,
+              }}
+            >
+              <CardActionArea>
+                <CardMedia
+                  component="img"
+                  height="140"
+                  image="/images/income_group.png"
+                  alt="image of global income classification visualization"
+                />
+                <CardContent>
+                  <Typography gutterBottom variant="h5" sx={{ color: "white" }}>
+                    Project 4 Clustering
+                  </Typography>
+                  <Typography variant="body2" sx={{ color: "white" }}>
+                    In progress...
                   </Typography>
                 </CardContent>
               </CardActionArea>
