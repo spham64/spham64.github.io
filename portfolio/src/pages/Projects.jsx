@@ -50,6 +50,7 @@ export default function Projects() {
             maxWidth: "100%",
             mb: 3,
             gap: 2,
+            flexWrap: { xs: "wrap", sm: "nowrap" },
           }}
         >
           <Link
@@ -123,6 +124,7 @@ export default function Projects() {
             maxWidth: "100%",
             mb: 3,
             gap: 2,
+            flexWrap: { xs: "wrap", sm: "nowrap" },
           }}
         >
           <Link to="/projects/nuclear">
@@ -192,9 +194,10 @@ export default function Projects() {
             maxWidth: "100%",
             mb: 3,
             gap: 2,
+            flexWrap: { xs: "wrap", sm: "nowrap" },
           }}
         >
-          <Link to="/projects/nuclear">
+          <Link to="/projects/gold">
             <Card
               sx={{
                 width: 350,
@@ -207,8 +210,8 @@ export default function Projects() {
                 <CardMedia
                   component="img"
                   height="140"
-                  image="/images/nuclear.png"
-                  alt="image of nuclear energy data visualization"
+                  image="/images/gold.png"
+                  alt="image of gold regression data visualization"
                 />
                 <CardContent>
                   <Typography gutterBottom variant="h5" sx={{ color: "white" }}>
