@@ -4,6 +4,7 @@ import Projects from "./pages/Projects";
 import Nuclear from "./pages/Nuclear";
 import IncomeClassification from "./pages/IncomeClassification";
 import Gold from "./pages/Gold";
+import ESG from "./pages/ESG";
 
 export default function App() {
   return (
@@ -17,6 +18,7 @@ export default function App() {
           element={<IncomeClassification />}
         />
         <Route path="/projects/gold" element={<Gold />}></Route>
+        <Route path="/projects/clustering" element={<ESG />}></Route>
       </Routes>
     </HashRouter>
   );

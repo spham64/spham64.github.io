@@ -225,7 +225,7 @@ export default function Projects() {
               </CardActionArea>
             </Card>
           </Link>
-          <Link to="/projects/classification">
+          <Link to="/projects/clustering">
             <Card
               sx={{
                 width: 350,
@@ -238,15 +238,16 @@ export default function Projects() {
                 <CardMedia
                   component="img"
                   height="140"
-                  image="/images/income_group.png"
-                  alt="image of global income classification visualization"
+                  image="/images/esg.png"
+                  alt="image of ESG clusters"
                 />
                 <CardContent>
                   <Typography gutterBottom variant="h5" sx={{ color: "white" }}>
-                    Project 4 Clustering
+                    ESG Clustering
                   </Typography>
                   <Typography variant="body2" sx={{ color: "white" }}>
-                    In progress...
+                    A Jupyter Notebook that applies K-Means clustering to group
+                    S&P 500 companies based on their ESG performance
                   </Typography>
                 </CardContent>
               </CardActionArea>

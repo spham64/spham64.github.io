@@ -2,7 +2,7 @@ import Box from "@mui/material/Box";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 
-export default function Gold() {
+export default function ESG() {
   return (
     <>
       <Box
@@ -27,8 +27,8 @@ export default function Gold() {
           }}
         >
           <iframe
-            src="/jupyter/gold.html"
-            title="Gold Regression Notebook"
+            src="/jupyter/esg.html"
+            title="ESG Clustering Notebook"
             style={{
               width: "100%",
               height: "80vh",
