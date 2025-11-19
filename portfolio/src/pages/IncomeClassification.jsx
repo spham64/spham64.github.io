@@ -1,6 +1,5 @@
 import Box from "@mui/material/Box";
-import Footer from "../components/Footer";
-import Header from "../components/Header";
+import BackButton from "../components/BackButton";
 
 export default function IncomeClassification() {
   return (
@@ -10,13 +9,10 @@ export default function IncomeClassification() {
           display: "flex",
           flexDirection: "column",
           minHeight: "100vh",
-          // border: 1,
           boxSizing: "border-box",
-          backgroundColor: "#242423",
           width: "100vw",
         }}
       >
-        <Header />
         <Box
           sx={{
             flex: 1,
@@ -36,7 +32,7 @@ export default function IncomeClassification() {
             }}
           />
         </Box>
-        <Footer />
+        <BackButton />
       </Box>
     </>
   );

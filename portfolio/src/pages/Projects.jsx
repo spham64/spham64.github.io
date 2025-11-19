@@ -1,15 +1,21 @@
+import { useState, useEffect } from "react";
 import Box from "@mui/material/Box";
-import Header from "../components/Header.jsx";
 import Typography from "@mui/material/Typography";
-import Footer from "../components/Footer.jsx";
-import { Link } from "react-router-dom";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import CardActionArea from "@mui/material/CardActionArea";
-import TipsAndUpdatesIcon from "@mui/icons-material/TipsAndUpdates";
+import MenuBookRoundedIcon from "@mui/icons-material/MenuBookRounded";
+import Menu from "../components/Menu";
+import { Link } from "react-router-dom";
 
 export default function Projects() {
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    setIsVisible(true);
+  }, []);
+
   return (
     <>
       <Box
@@ -18,12 +24,11 @@ export default function Projects() {
           flexDirection: "column",
           minHeight: "100vh",
           boxSizing: "border-box",
-          backgroundColor: "#242423",
           width: "99vw",
-          // border: 1,
+          opacity: isVisible ? 1 : 0,
+          transition: "opacity 0.6s ease-in",
         }}
       >
-        <Header />
         <Box
           sx={{
             display: "flex",
@@ -35,11 +40,25 @@ export default function Projects() {
             maxWidth: "100%",
           }}
         >
-          <Typography variant="h2" sx={{ mb: 4 }}>
-            Projects <TipsAndUpdatesIcon fontSize="extralarge" />
-          </Typography>
+          <Box
+            sx={{
+              display: "flex",
+              flexDirection: "row",
+              //   border: 1,
+              justifyContent: "center",
+              alignItems: "center",
+            }}
+          >
+            <Typography variant="h2" sx={{ mb: 4 }}>
+              Projects{" "}
+            </Typography>
+            <Box sx={{ mb: 3, ml: 2 }}>
+              <Typography variant="h2">
+                <MenuBookRoundedIcon fontSize="extralarge" />
+              </Typography>
+            </Box>
+          </Box>
         </Box>
-
         <Box
           sx={{
             display: "flex",
@@ -53,25 +72,37 @@ export default function Projects() {
             flexWrap: { xs: "wrap", sm: "nowrap" },
           }}
         >
-          <Link
-            to="https://github.com/Group10-3155/group_10_3155"
+          <a
+            href="https://github.com/Group10-3155/group_10_3155"
             target="_blank"
+            rel="noopener noreferrer"
+            style={{ textDecoration: "none" }}
           >
             <Card
               sx={{
-                width: 350,
+                width: 370,
                 height: 275,
-                backgroundColor: "#353533ff",
+                backgroundColor: "#131212ff",
                 borderRadius: 4,
+                transition: "transform 0.3s ease-in-out",
+                "&:hover": {
+                  transform: "translateY(-8px)",
+                },
+                overflow: "hidden",
               }}
             >
-              <CardActionArea>
-                <CardMedia
-                  component="img"
-                  height="140"
-                  image="/images/wyaniners_logo.png"
-                  alt="wyaniners logo"
-                />
+              <CardActionArea sx={{ height: "100%" }}>
+                <Box sx={{ overflow: "hidden", height: 140 }}>
+                  <CardMedia
+                    component="img"
+                    height="140"
+                    image="/images/wyaniners_logo.png"
+                    alt="wyaniners logo"
+                    sx={{
+                      transition: "transform 0.3s ease-in-out",
+                    }}
+                  />
+                </Box>
                 <CardContent>
                   <Typography gutterBottom variant="h5" sx={{ color: "white" }}>
                     WYANiners
@@ -84,24 +115,39 @@ export default function Projects() {
                 </CardContent>
               </CardActionArea>
             </Card>
-          </Link>
+          </a>
 
-          <Link to="https://github.com/ryanhilliard23/ADaVS" target="_blank">
+          <a
+            href="https://github.com/ryanhilliard23/ADaVS"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ textDecoration: "none" }}
+          >
             <Card
               sx={{
-                width: 350,
+                width: 370,
                 height: 275,
-                backgroundColor: "#353533ff",
+                backgroundColor: "#131212ff",
                 borderRadius: 4,
+                transition: "transform 0.3s ease-in-out",
+                "&:hover": {
+                  transform: "translateY(-8px)",
+                },
+                overflow: "hidden",
               }}
             >
               <CardActionArea sx={{ height: "100%" }}>
-                <CardMedia
-                  component="img"
-                  height="140"
-                  image="/images/adavs_logo.png"
-                  alt="adavs logo"
-                />
+                <Box sx={{ overflow: "hidden", height: 140 }}>
+                  <CardMedia
+                    component="img"
+                    height="140"
+                    image="/images/adavs_logo.png"
+                    alt="adavs logo"
+                    sx={{
+                      transition: "transform 0.3s ease-in-out",
+                    }}
+                  />
+                </Box>
                 <CardContent>
                   <Typography gutterBottom variant="h5" sx={{ color: "white" }}>
                     ADaVS
@@ -113,7 +159,7 @@ export default function Projects() {
                 </CardContent>
               </CardActionArea>
             </Card>
-          </Link>
+          </a>
         </Box>
         <Box
           sx={{
@@ -127,63 +173,95 @@ export default function Projects() {
             flexWrap: { xs: "wrap", sm: "nowrap" },
           }}
         >
-          <Link to="/projects/nuclear">
-            <Card
-              sx={{
-                width: 350,
-                height: 275,
-                backgroundColor: "#353533ff",
-                borderRadius: 4,
-              }}
-            >
-              <CardActionArea>
-                <CardMedia
-                  component="img"
-                  height="140"
-                  image="/images/nuclear.png"
-                  alt="image of nuclear energy data visualization"
-                />
-                <CardContent>
-                  <Typography gutterBottom variant="h5" sx={{ color: "white" }}>
-                    Nuclear Energy in the U.S.
-                  </Typography>
-                  <Typography variant="body2" sx={{ color: "white" }}>
-                    A jupyter notebook that compares nuclear energy with other
-                    energy sources in the United States
-                  </Typography>
-                </CardContent>
-              </CardActionArea>
-            </Card>
-          </Link>
-          <Link to="/projects/classification">
-            <Card
-              sx={{
-                width: 350,
-                height: 275,
-                backgroundColor: "#353533ff",
-                borderRadius: 4,
-              }}
-            >
-              <CardActionArea>
-                <CardMedia
-                  component="img"
-                  height="140"
-                  image="/images/income_group.png"
-                  alt="image of global income classification visualization"
-                />
-                <CardContent>
-                  <Typography gutterBottom variant="h5" sx={{ color: "white" }}>
-                    Global Income Classification
-                  </Typography>
-                  <Typography variant="body2" sx={{ color: "white" }}>
-                    A jupyter notebook that predicts country income groups using
-                    non-GDP development indicators with a high-performing Random
-                    Forest model
-                  </Typography>
-                </CardContent>
-              </CardActionArea>
-            </Card>
-          </Link>
+          <Box sx={{ textDecoration: "none", cursor: "pointer" }}>
+            <Link to="/projects/nuclear">
+              <Card
+                sx={{
+                  width: 370,
+                  height: 275,
+                  backgroundColor: "#131212ff",
+                  borderRadius: 4,
+                  transition: "transform 0.3s ease-in-out",
+                  "&:hover": {
+                    transform: "translateY(-8px)",
+                  },
+                  overflow: "hidden",
+                }}
+              >
+                <CardActionArea sx={{ height: "100%" }}>
+                  <Box sx={{ overflow: "hidden", height: 140 }}>
+                    <CardMedia
+                      component="img"
+                      height="140"
+                      image="images/nuclear.png"
+                      alt="nuclear energy visualization"
+                      sx={{
+                        transition: "transform 0.3s ease-in-out",
+                      }}
+                    />
+                  </Box>
+                  <CardContent>
+                    <Typography
+                      gutterBottom
+                      variant="h5"
+                      sx={{ color: "white" }}
+                    >
+                      Nuclear Energy in the U.S.
+                    </Typography>
+                    <Typography variant="body2" sx={{ color: "white" }}>
+                      A jupyter notebook that compares nuclear energy with other
+                      energy sources in the United States
+                    </Typography>
+                  </CardContent>
+                </CardActionArea>
+              </Card>
+            </Link>
+          </Box>
+          <Box sx={{ textDecoration: "none", cursor: "pointer" }}>
+            <Link to="/projects/classification">
+              <Card
+                sx={{
+                  width: 370,
+                  height: 275,
+                  backgroundColor: "#131212ff",
+                  borderRadius: 4,
+                  transition: "transform 0.3s ease-in-out",
+                  "&:hover": {
+                    transform: "translateY(-8px)",
+                  },
+                  overflow: "hidden",
+                }}
+              >
+                <CardActionArea sx={{ height: "100%" }}>
+                  <Box sx={{ overflow: "hidden", height: 140 }}>
+                    <CardMedia
+                      component="img"
+                      height="140"
+                      image="images/income_group.png"
+                      alt="income classification visualization"
+                      sx={{
+                        transition: "transform 0.3s ease-in-out",
+                      }}
+                    />
+                  </Box>
+                  <CardContent>
+                    <Typography
+                      gutterBottom
+                      variant="h5"
+                      sx={{ color: "white" }}
+                    >
+                      Global Income Classification
+                    </Typography>
+                    <Typography variant="body2" sx={{ color: "white" }}>
+                      A jupyter notebook that predicts country income groups
+                      using non-GDP development indicators with a
+                      high-performing Random Forest model
+                    </Typography>
+                  </CardContent>
+                </CardActionArea>
+              </Card>
+            </Link>
+          </Box>
         </Box>
         <Box
           sx={{
@@ -197,65 +275,97 @@ export default function Projects() {
             flexWrap: { xs: "wrap", sm: "nowrap" },
           }}
         >
-          <Link to="/projects/gold">
-            <Card
-              sx={{
-                width: 350,
-                height: 275,
-                backgroundColor: "#353533ff",
-                borderRadius: 4,
-              }}
-            >
-              <CardActionArea>
-                <CardMedia
-                  component="img"
-                  height="140"
-                  image="/images/gold.png"
-                  alt="image of gold regression data visualization"
-                />
-                <CardContent>
-                  <Typography gutterBottom variant="h5" sx={{ color: "white" }}>
-                    Gold Regression
-                  </Typography>
-                  <Typography variant="body2" sx={{ color: "white" }}>
-                    A jupyter notebook that uses regression models to predict
-                    gold prices based on various financial factors
-                  </Typography>
-                </CardContent>
-              </CardActionArea>
-            </Card>
-          </Link>
-          <Link to="/projects/clustering">
-            <Card
-              sx={{
-                width: 350,
-                height: 275,
-                backgroundColor: "#353533ff",
-                borderRadius: 4,
-              }}
-            >
-              <CardActionArea>
-                <CardMedia
-                  component="img"
-                  height="140"
-                  image="/images/esg.png"
-                  alt="image of ESG clusters"
-                />
-                <CardContent>
-                  <Typography gutterBottom variant="h5" sx={{ color: "white" }}>
-                    ESG Clustering
-                  </Typography>
-                  <Typography variant="body2" sx={{ color: "white" }}>
-                    A Jupyter Notebook that applies K-Means clustering to group
-                    S&P 500 companies based on their ESG performance
-                  </Typography>
-                </CardContent>
-              </CardActionArea>
-            </Card>
-          </Link>
+          <Box sx={{ textDecoration: "none", cursor: "pointer" }}>
+            <Link to="/projects/gold">
+              <Card
+                sx={{
+                  width: 370,
+                  height: 275,
+                  backgroundColor: "#131212ff",
+                  borderRadius: 4,
+                  transition: "transform 0.3s ease-in-out",
+                  "&:hover": {
+                    transform: "translateY(-8px)",
+                  },
+                  overflow: "hidden",
+                }}
+              >
+                <CardActionArea sx={{ height: "100%" }}>
+                  <Box sx={{ overflow: "hidden", height: 140 }}>
+                    <CardMedia
+                      component="img"
+                      height="140"
+                      image="images/gold.png"
+                      alt="gold regression visualization"
+                      sx={{
+                        transition: "transform 0.3s ease-in-out",
+                      }}
+                    />
+                  </Box>
+                  <CardContent>
+                    <Typography
+                      gutterBottom
+                      variant="h5"
+                      sx={{ color: "white" }}
+                    >
+                      Gold Regression
+                    </Typography>
+                    <Typography variant="body2" sx={{ color: "white" }}>
+                      A jupyter notebook that uses regression models to predict
+                      gold prices based on various financial factors
+                    </Typography>
+                  </CardContent>
+                </CardActionArea>
+              </Card>
+            </Link>
+          </Box>
+          <Box sx={{ textDecoration: "none", cursor: "pointer" }}>
+            <Link to="/projects/clustering">
+              <Card
+                sx={{
+                  width: 370,
+                  height: 275,
+                  backgroundColor: "#131212ff",
+                  borderRadius: 4,
+                  transition: "transform 0.3s ease-in-out",
+                  "&:hover": {
+                    transform: "translateY(-8px)",
+                  },
+                  overflow: "hidden",
+                }}
+              >
+                <CardActionArea sx={{ height: "100%" }}>
+                  <Box sx={{ overflow: "hidden", height: 140 }}>
+                    <CardMedia
+                      component="img"
+                      height="140"
+                      image="images/esg.png"
+                      alt="ESG clusters visualization"
+                      sx={{
+                        transition: "transform 0.3s ease-in-out",
+                      }}
+                    />
+                  </Box>
+                  <CardContent>
+                    <Typography
+                      gutterBottom
+                      variant="h5"
+                      sx={{ color: "white" }}
+                    >
+                      ESG Clustering
+                    </Typography>
+                    <Typography variant="body2" sx={{ color: "white" }}>
+                      A Jupyter Notebook that applies K-Means clustering to
+                      group S&P 500 companies based on their ESG performance
+                    </Typography>
+                  </CardContent>
+                </CardActionArea>
+              </Card>
+            </Link>
+          </Box>
         </Box>
-        <Footer />
       </Box>
+      <Menu />
     </>
   );
 }

@@ -1,97 +1,69 @@
+import { useState, useEffect } from "react";
 import Box from "@mui/material/Box";
-import Header from "../components/Header.jsx";
 import Typography from "@mui/material/Typography";
-import { Link } from "react-router-dom";
-import { useEffect, useState, useRef } from "react";
-import Avatar from "@mui/material/Avatar";
-import Footer from "../components/Footer.jsx";
+import Menu from "../components/Menu";
+import Globe from "../components/Globe";
 
 export default function Home() {
-  const [age, setAge] = useState("0");
+  const [displayedText, setDisplayedText] = useState("");
+  const fullText = "Sam Pham";
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      const time =
-        (new Date() - new Date("2005-01-26T00:00:00")) /
-        (1000 * 60 * 60 * 24 * 365.25);
-      setAge(time.toString().substring(0, 12));
-    }, 50);
+    let index = 0;
+    const timer = setInterval(() => {
+      if (index <= fullText.length) {
+        setDisplayedText(fullText.slice(0, index));
+        index++;
+      } else {
+        clearInterval(timer);
+      }
+    }, 100);
 
-    return () => clearInterval(interval);
+    return () => clearInterval(timer);
   }, []);
 
   return (
     <>
+      <Globe />
       <Box
         sx={{
-          display: "flex",
-          flexDirection: "column",
-          minHeight: "100vh",
+          position: "fixed",
+          top: "50%",
+          left: "50%",
+          transform: "translate(-50%, -50%)",
+          zIndex: 10,
+          backdropFilter: "blur(1px)",
+          borderRadius: 2,
           // border: 1,
-          boxSizing: "border-box",
-          backgroundColor: "#242423",
-          width: "100vw",
         }}
       >
-        <Header />
-
-        <Box
+        <Typography
           sx={{
-            display: "flex",
-            flexDirection: "column",
-            justifyContent: "center",
-            // border: 1,
-            mx: { xs: 2, sm: 10, md: 20, lg: 50, xl: 75 },
-            mt: { xs: 3, sm: 7 },
-            maxWidth: "100%",
-            mb: 5,
+            color: "white",
+            fontSize: "4rem",
+            fontWeight: 500,
+            letterSpacing: 2,
+            textTransform: "uppercase",
+            fontFamily: "Inconsolata",
           }}
         >
-          <Avatar
-            alt="Sam Pham"
-            src="/images/myself_reduced.jpg"
-            sx={{ height: 150, width: 150, mb: 2 }}
-          />
-          <Typography variant="h3">Hi, I am Sam Pham</Typography>
-          <Typography variant="h6" sx={{ mb: 2 }}>
-            Student & Researcher at UNC Charlotte
-          </Typography>
-          <Typography variant="body1" sx={{ my: 1 }}>
-            I'm a <span id="age">{age}</span> year-old student at UNCC from
-            Charlotte, NC, with a passion for solving challenging problems using
-            cutting-edge technologies and tools. This passion has led me into
-            the software development field, where I have researched and worked
-            on ways to support literacy and education for all.
-          </Typography>
-          <Typography variant="body1" sx={{ my: 1 }}>
-            When I'm not coding or studying, I enjoy activites that keep my
-            physically and mentally active. Whether it's going to the gym,
-            reading, or staying up-to-date with the latest trends in technology
-            and economics, I’m always looking for ways to stay engaged and
-            continue learning.
-          </Typography>
-          <Typography>
-            Check out my{" "}
-            <Link
-              to="https://github.com/spham64/"
-              target="_blank"
-              style={{ color: "#E16036" }}
-            >
-              GitHub
-            </Link>{" "}
-            and{" "}
-            <Link
-              to="https://drive.google.com/file/d/18ui1_42pOzMsrTZfjkb5FBEcrnYd43qw/view?usp=sharing"
-              target="_blank"
-              style={{ color: "#E16036" }}
-            >
-              resume
-            </Link>
-            .
-          </Typography>
-        </Box>
-        <Footer />
+          {displayedText}
+          <Box
+            component="span"
+            sx={{
+              //   border: 1,
+              animation: "blink 1s infinite",
+              "@keyframes blink": {
+                "0%, 100%": { opacity: 1 },
+                "50%": { opacity: 0 },
+              },
+            }}
+          >
+            _
+          </Box>
+        </Typography>
       </Box>
+      <Menu />
     </>
   );
 }
