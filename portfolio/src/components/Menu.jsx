@@ -255,8 +255,7 @@ export default function Menu() {
         position: "fixed",
         bottom: 100,
         left: {
-          md: 40,
-          lg: 100,
+          lg: 50,
           xl: 100,
         },
         display: "flex",
@@ -266,8 +265,7 @@ export default function Menu() {
         overflow: "hidden",
         bgcolor: "rgba(0,0,0,0.4)",
         minWidth: {
-          md: 200, // laptops a bit smaller
-          lg: 300,
+          lg: 275,
           xl: 325,
         },
       }}
